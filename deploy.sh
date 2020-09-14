@@ -6,6 +6,10 @@ docker push reddyshack/multi-client:latest
 docker push reddyshack/multi-server:latest
 docker push reddyshack/multi-worker:latest
 
+docker tag reddyshack/multi-client:latest reddyshack/mult-client:$SHA
+docker tag reddyshack/multi-server:latest reddyshack/mult-server:$SHA
+docker tag reddyshack/multi-worker:latest reddyshack/mult-worker:$SHA
+
 docker push reddyshack/multi-client:$SHA
 docker push reddyshack/multi-server:$SHA
 docker push reddyshack/multi-worker:$SHA
