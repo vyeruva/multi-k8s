@@ -19,8 +19,8 @@ before_install:
 scripts:
   - docker run -e CI=true reddyshack/react-test npm test
 
-  deploy:
-    provider: script
-    script: bash ./deploy.sh
-    on:
-      branch: master
+deploy:
+  provider: script
+  script: bash ./deploy.sh
+  on:
+    branch: master
