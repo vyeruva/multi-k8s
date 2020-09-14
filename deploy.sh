@@ -1,6 +1,6 @@
 docker build -t reddyshack/mult-client:$SHA -f ./client/Dockerfile ./client
 docker build -t reddyshack/mult-server:$SHA -f ./server/Dockerfile ./server
-docker build -t reddyshack/mult-worker:$SHA -f ./worker/Dockerfile ./worker\
+docker build -t reddyshack/mult-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push reddyshack/multi-client:$SHA
 docker push reddyshack/multi-server:$SHA
